@@ -26,11 +26,11 @@ function getPlayerMove(move) {
     var move = getInput();
     if (move === null) {
         getInput();
-    } else { 
+    } else {
         console.log("player chooses " + move);
         playerMove = move;
         getComputerMove();
-    } 
+    }
 }
 
 function getComputerMove(move) {
@@ -81,7 +81,7 @@ function playToFive() {
     for (var i=0; i<25; i++) {
         if (playerWins === 5 || computerWins ===5) {
             console.log("FINAL SCORE: Player Wins : " + playerWins + " Computer Wins : " + computerwins);
-            break; 
+            break;
         }
         else
         {
@@ -98,5 +98,4 @@ function playToFive() {
         getPlayerMove();
         }
     }
-}   
-  
+}
